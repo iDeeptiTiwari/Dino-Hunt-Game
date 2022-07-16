@@ -17,9 +17,7 @@ Dino-Hunt is a simple game where the user have to hunt the dinos by targeting th
 
 ## Demo Video
 
-<figure class="video_container">
-  <iframe src="https://user-images.githubusercontent.com/49716268/179367900-f5b3a09b-1f25-4ad0-8983-f9ec3d0c365e.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+https://youtu.be/RmvWLzTEWLI
 
 # Tech Stack Used
 
