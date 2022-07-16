@@ -1,0 +1,127 @@
+:root {
+  --score-bar-height: 0%;
+  --dino1-distance: 0px;
+  --dino2-distance: 0px;
+  --dino3-distance: 0px;
+  --dino4-distance: 0px;
+}
+body {
+  background-image: url("resources/background.jpeg");
+  background-size: cover;
+}
+#base {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#gameArea {
+  width: 93.5%;
+  height: 99%;
+  margin: 5px;
+  display: none;
+  position: flex;
+  flex-wrap: wrap;
+}
+#scoreBar {
+  width: 3%;
+  height: var(--score-bar-height);
+  background-image: url("resources/score_bar.jpeg");
+  border: 2px white;
+  margin: auto;
+  display: none;
+}
+#gameStart {
+  z-index: 2;
+  background-image: url("resources/start_game.png");
+  background-size: cover;
+  background-position: center;
+  border: solid white 5px;
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  display: block;
+}
+#gameOver {
+  background-image: url("resources/giphy.gif");
+  border: solid white 5px;
+  background-size: cover;
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  display: none;
+}
+#gameWon {
+  background-image: url("resources/game_won.gif");
+  background-size: cover;
+  border: solid white 5px;
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  display: none;
+}
+#restartMsg {
+  animation: blinking 1s infinite;
+  color: wheat;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 180%;
+}
+.tracks {
+  width: 98%;
+  height: 20%;
+  display: block;
+  margin: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(246, 248, 246, 255);
+  position: relative;
+}
+.dino {
+  background-image: url("resources/dino.gif");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 100%;
+  width: 18%;
+  position: absolute;
+}
+#dino1 {
+  right: var(--dino1-distance);
+}
+#dino2 {
+  right: var(--dino2-distance);
+}
+#dino3 {
+  right: var(--dino3-distance);
+}
+#dino4 {
+  right: var(--dino4-distance);
+}
+@keyframes blinking {
+  0% {
+    background-color: greenyellow;
+  }
+  25% {
+    background-color: green;
+    font-size: 202%;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: aqua;
+    font-size: 202%;
+  }
+  100% {
+    background-color: rebeccapurple;
+  }
+}

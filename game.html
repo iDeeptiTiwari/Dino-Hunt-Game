@@ -1,0 +1,32 @@
+<html>
+  <script type="text/javascript" src="game.js"></script>
+  <link rel="stylesheet" href="game.css" />
+  <body>
+    <div id="base">
+      <div id="gameStart" onclick="start()">
+        <div id="restartMsg">Click Anywhere To Start</div>
+      </div>
+      <div id="gameArea">
+        <div class="tracks" id="track1" onclick="decrease()">
+          <div class="dino" id="dino1" onclick="popDino1()"></div>
+        </div>
+        <div class="tracks" id="track2" onclick="decrease()">
+          <div class="dino" id="dino2" onclick="popDino2()"></div>
+        </div>
+        <div class="tracks" id="track3" onclick="decrease()">
+          <div class="dino" id="dino3" onclick="popDino3()"></div>
+        </div>
+        <div class="tracks" id="track4" onclick="decrease()">
+          <div class="dino" id="dino4" onclick="popDino4()"></div>
+        </div>
+      </div>
+      <div id="scoreBar"></div>
+      <div id="gameOver" onclick="restart()">
+        <div id="restartMsg">Click Anywhere To Restart</div>
+      </div>
+      <div id="gameWon" onclick="restart()">
+        <div id="restartMsg">Click Anywhere To Restart</div>
+      </div>
+    </div>
+  </body>
+</html>
